@@ -15,7 +15,6 @@ export default function authUserReducer(
 ) {
   switch (type) {
     case LOGIN:
-      console.log("In User");
       return {
         ...state,
         user: payload,
