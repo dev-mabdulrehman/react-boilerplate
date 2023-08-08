@@ -31,7 +31,7 @@ function App() {
                                     );
                             }
                         })}
-                        <Redirect to="/" />
+                        <Redirect to="/dashboard" />
                     </Switch>
                 </BrowserRouter>
             </Provider>

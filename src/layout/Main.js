@@ -1,11 +1,5 @@
-const Main = props => {
-	return (
-		<>
-			<header>Main Header</header>
-			{props.children}
-			<footer>Main Footer</footer>
-		</>
-	);
+const Main = (props) => {
+    return <>{props.children}</>;
 };
 
 export default Main;

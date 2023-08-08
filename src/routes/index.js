@@ -1,17 +1,28 @@
-import AuthView from '../views/auth/AuthView';
-import MainView from '../views/MainView';
-
+import Home from "../views/auth/Home";
+import Login from "../views/auth/Login";
+import Register from "../views/auth/Register";
+import Dashboard from "../views/Dashboard";
 
 let routes = [
-	{
-		path: '/auth',
-		component: AuthView,
-		layout: 'auth',
-	},
-	{
-		path: '/',
-		component: MainView,
-		layout: 'main',
-	},
+    {
+        path: "/",
+        component: Home,
+        layout: "auth",
+    },
+    {
+        path: "/sign-in",
+        component: Login,
+        layout: "auth",
+    },
+    {
+        path: "/sign-up",
+        component: Register,
+        layout: "auth",
+    },
+    {
+        path: "/dashboard",
+        component: Dashboard,
+        layout: "main",
+    },
 ];
 export default routes;
